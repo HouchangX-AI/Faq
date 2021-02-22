@@ -1,0 +1,739 @@
+nohup: ignoring input
+/env/BEFAQ/bert_server/.././data/model/
+WARNING:root:You try to use a model that was created with version 0.3.6, however, your version is 0.3.0. This might cause unexpected behavior or errors. In that case, try to update to the latest version.
+
+
+
+/root/.local/share/virtualenvs/BEFAQ-bxG4-Ian/lib/python3.6/site-packages/torch/cuda/__init__.py:52: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 10010). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at  /pytorch/c10/cuda/CUDAFunctions.cpp:100.)
+  return torch._C._cuda_getDeviceCount() > 0
+WARNING:root:You try to use a model that was created with version 0.3.6, however, your version is 0.3.0. This might cause unexpected behavior or errors. In that case, try to update to the latest version.
+
+
+
+WARNING:root:You try to use a model that was created with version 0.3.6, however, your version is 0.3.0. This might cause unexpected behavior or errors. In that case, try to update to the latest version.
+
+
+
+8129端口程序kill 成功
+/bin/sh: 1: kill: Usage: kill [-s sigspec | -signum | -sigspec] [pid | job]... or
+kill -l [exitstatus]
+WARNING:root:You try to use a model that was created with version 0.3.6, however, your version is 0.3.0. This might cause unexpected behavior or errors. In that case, try to update to the latest version.
+
+
+
+/root/.local/share/virtualenvs/BEFAQ-bxG4-Ian/lib/python3.6/site-packages/torch/cuda/__init__.py:52: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 10010). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at  /pytorch/c10/cuda/CUDAFunctions.cpp:100.)
+  return torch._C._cuda_getDeviceCount() > 0
+WARNING:root:You try to use a model that was created with version 0.3.6, however, your version is 0.3.0. This might cause unexpected behavior or errors. In that case, try to update to the latest version.
+
+
+
+WARNING:root:You try to use a model that was created with version 0.3.6, however, your version is 0.3.0. This might cause unexpected behavior or errors. In that case, try to update to the latest version.
+
+
+
+/env/BEFAQ/bert_server/.././data/model/
+/bin/sh: 1: kill: Usage: kill [-s sigspec | -signum | -sigspec] [pid | job]... or
+kill -l [exitstatus]
+8129端口程序kill 成功
+[2020-11-30 05:24:09 +0000] [2286] [INFO] Goin' Fast @ http://172.17.0.2:8129
+INFO:sanic.root:Goin' Fast @ http://172.17.0.2:8129
+[2020-11-30 05:24:09 +0000] [2286] [INFO] Starting worker [2286]
+INFO:sanic.root:Starting worker [2286]
+Building prefix dict from the default dictionary ...
+DEBUG:jieba:Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+DEBUG:jieba:Loading model from cache /tmp/jieba.cache
+Loading model cost 0.492 seconds.
+DEBUG:jieba:Loading model cost 0.492 seconds.
+Prefix dict has been built succesfully.
+DEBUG:jieba:Prefix dict has been built succesfully.
+process_query jupyter
+query_word_list ['jupyter']
+ES查询语句： {'query': {'bool': {'must': [{'bool': {'should': [{'match': {'process_question': 'jupyter'}}]}}]}}, '_source': ['q_id', 'process_question', 'original_question', 'answer', 'specific_q_id'], 'size': 10}
+maybe_original_questions_es ['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+Q:jupyter,召回阶段用时0.020756秒
+['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+orgin_query_list ['jupyter']
+BERT: 0.018913984298706055
+np.mean: 0.00010800361633300781
+MBERT: 1.6689300537109375e-05
+reshape: 1.1205673217773438e-05
+SKlearn: 0.0006895065307617188
+Q:jupyter,Matching cosine_sim用时0.019799秒
+consin_sim: [0.2712891352601786, 0.24307801828398218, -0.04403442438865092]
+jaccard_sim: [0.25, 0.3333333333333333, 0.125]
+[5, 125, 171]
+['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+re_rank_sim: [0.2670313082081429, 0.2611290812938524, -0.010227539510920737]
+{5: [0], 125: [1], 171: [2]}
+Q:jupyter,Deduplicate and Threshold用时0.000011秒
+high_confidence_q_id_pos [0, 1]
+[{'q_id': 5, 'specific_q_id': 3, 'question': 'jupyter运行不出来', 'answer': '用kernel里面的Clear Output清除一下重新运行', 'confidence': 0.27}, {'q_id': 125, 'specific_q_id': 17, 'question': '如何打开jupyter', 'answer': '1.jupyter有图形打开方式,按住窗口键，在anaconda文件夹下面有jupyter点击可以打开  2.可以按住ctrl加R键，然后在里面输入cmd，会出现黑屏终端。在终端当中输入jupyter notebook命令', 'confidence': 0.26}]
+[2020-11-30 05:29:17 +0000] - (sanic.access)[INFO][10.20.31.118:60567]: POST http://10.20.15.95:8129/BEFAQ  200 709
+INFO:sanic.access:
+WARNING:asyncio:Executing <Task finished coro=<Sanic.handle_request() done, defined at /root/.local/share/virtualenvs/BEFAQ-bxG4-Ian/lib/python3.6/site-packages/sanic/app.py:881> result=None created at /root/.local/share/virtualenvs/BEFAQ-bxG4-Ian/lib/python3.6/site-packages/sanic/server.py:458> took 0.535 seconds
+process_query jupyter如何
+query_word_list ['jupyter', '如何']
+ES查询语句： {'query': {'bool': {'must': [{'bool': {'should': [{'match': {'process_question': 'jupyter'}}, {'match': {'process_question': '如何'}}]}}]}}, '_source': ['q_id', 'process_question', 'original_question', 'answer', 'specific_q_id'], 'size': 10}
+maybe_original_questions_es ['如何打开jupyter', 'jupyter运行不出来', 'Series遍历时如何获取索引呢', 'resample方法如何改变频率为星期', 'dataframe中的resample方法如何使用', 'jupyter课程基本都快坚持多久？', 'Series如何获取挨个获取数据', 'Series遍历时如何获取索引呢', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据']
+Q:jupyter如何,召回阶段用时0.007797秒
+['如何打开jupyter', 'jupyter运行不出来', 'Series遍历时如何获取索引呢', 'resample方法如何改变频率为星期', 'dataframe中的resample方法如何使用', 'jupyter课程基本都快坚持多久？', 'Series如何获取挨个获取数据', 'Series遍历时如何获取索引呢', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据']
+orgin_query_list ['jupyter如何']
+BERT: 0.02297210693359375
+np.mean: 9.131431579589844e-05
+MBERT: 3.838539123535156e-05
+reshape: 3.0517578125e-05
+SKlearn: 0.0006744861602783203
+Q:jupyter如何,Matching cosine_sim用时0.023891秒
+consin_sim: [0.6647075801664848, 0.31767340595573224, 0.3131256350791972, 0.24046414856230103, 0.23626773117129896, 0.1364955790313268, 0.19562279593974735, 0.3131256350791972, 0.160643601246411, 0.160643601246411]
+jaccard_sim: [0.6666666666666666, 0.2, 0.125, 0.125, 0.125, 0.1111111111111111, 0.16666666666666666, 0.125, 0.1111111111111111, 0.1111111111111111]
+[125, 5, 108, 141, 140, 171, 135, 133, 109, 136]
+['如何打开jupyter', 'jupyter运行不出来', 'Series遍历时如何获取索引呢', 'resample方法如何改变频率为星期', 'dataframe中的resample方法如何使用', 'jupyter课程基本都快坚持多久？', 'Series如何获取挨个获取数据', 'Series遍历时如何获取索引呢', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据']
+['如何打开jupyter', 'jupyter运行不出来', 'series遍历时如何获取索引呢', 'resample方法如何改变频率为星期', 'dataframe中的resample方法如何使用', 'jupyter课程基本都快坚持多久？', 'series如何获取挨个获取数据', 'series遍历时如何获取索引呢', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据']
+re_rank_sim: [0.6650993974665211, 0.2941387247645858, 0.2755005080633578, 0.21737131884984082, 0.21401418493703916, 0.13141868544728366, 0.1898315700851312, 0.2755005080633578, 0.15073710321935102, 0.15073710321935102]
+{125: [0], 5: [1], 108: [2], 141: [3], 140: [4], 171: [5], 135: [6], 133: [7], 109: [8], 136: [9]}
+Q:jupyter如何,Deduplicate and Threshold用时0.000028秒
+high_confidence_q_id_pos [0, 1, 2, 3, 4, 7]
+[{'q_id': 125, 'specific_q_id': 17, 'question': '如何打开jupyter', 'answer': '1.jupyter有图形打开方式,按住窗口键，在anaconda文件夹下面有jupyter点击可以打开  2.可以按住ctrl加R键，然后在里面输入cmd，会出现黑屏终端。在终端当中输入jupyter notebook命令', 'confidence': 0.67}, {'q_id': 5, 'specific_q_id': 3, 'question': 'jupyter运行不出来', 'answer': '用kernel里面的Clear Output清除一下重新运行', 'confidence': 0.29}, {'q_id': 108, 'specific_q_id': 9, 'question': 'Series遍历时如何获取索引呢', 'answer': '通过for循环Series的keys()方法进行获取', 'confidence': 0.28}, {'q_id': 133, 'specific_q_id': 23, 'question': 'Series遍历时如何获取索引呢', 'answer': '通过for循环Series的keys()方法进行获取\n', 'confidence': 0.28}, {'q_id': 141, 'specific_q_id': 30, 'question': 'resample方法如何改变频率为星期', 'answer': '通过resample改变其中参数，例如resample("W")就是按照星期进行采样的\n\n\n', 'confidence': 0.22}]
+[2020-11-30 05:29:28 +0000] - (sanic.access)[INFO][10.20.31.118:60574]: POST http://10.20.15.95:8129/BEFAQ  200 1467
+INFO:sanic.access:
+process_query jupyter运行不出来
+query_word_list ['jupyter', '运行', '不', '出来']
+ES查询语句： {'query': {'bool': {'must': [{'bool': {'should': [{'match': {'process_question': 'jupyter'}}, {'match': {'process_question': '运行'}}, {'match': {'process_question': '不'}}, {'match': {'process_question': '出来'}}]}}]}}, '_source': ['q_id', 'process_question', 'original_question', 'answer', 'specific_q_id'], 'size': 10}
+maybe_original_questions_es ['jupyter运行不出来', '如何打开jupyter', 'index.tolist()不写tolist（）行吗？', '法古不泥', '用merge合并时on的值不会写', 'jupyter课程基本都快坚持多久？', 'matplotlib中文不显示问题，中文部分为方块']
+Q:jupyter运行不出来,召回阶段用时0.080531秒
+['jupyter运行不出来', '如何打开jupyter', 'index.tolist()不写tolist（）行吗？', '法古不泥', '用merge合并时on的值不会写', 'jupyter课程基本都快坚持多久？', 'matplotlib中文不显示问题，中文部分为方块']
+orgin_query_list ['jupyter运行不出来']
+BERT: 0.02046513557434082
+np.mean: 7.653236389160156e-05
+MBERT: 2.9325485229492188e-05
+reshape: 2.288818359375e-05
+SKlearn: 0.0006592273712158203
+Q:jupyter运行不出来,Matching cosine_sim用时0.021336秒
+consin_sim: [1, 0.34627163210852197, 0.28392101440637685, 0.4223389167966347, 0.21788935541973148, 0.08305827208902172, 0.23932243951710166]
+jaccard_sim: [1.0, 0.16666666666666666, 0.0, 0.0, 0.0, 0.09090909090909091, 0.07692307692307693]
+[5, 125, 150, 176, 147, 171, 4]
+['jupyter运行不出来', '如何打开jupyter', 'index.tolist()不写tolist（）行吗？', '法古不泥', '用merge合并时on的值不会写', 'jupyter课程基本都快坚持多久？', 'matplotlib中文不显示问题，中文部分为方块']
+['jupyter运行不出来', '如何打开jupyter', 'index.tolist()不写tolist（）行吗？', '法古不泥', '用merge合并时on的值不会写', 'jupyter课程基本都快坚持多久？', 'matplotlib中文不显示问题，中文部分为方块']
+re_rank_sim: [1.0, 0.3103506390201509, 0.22713681152510148, 0.3378711334373078, 0.1743114843357852, 0.08462843585303557, 0.20684256699829673]
+{5: [0], 125: [1], 150: [2], 176: [3], 147: [4], 171: [5], 4: [6]}
+Q:jupyter运行不出来,Deduplicate and Threshold用时0.000025秒
+high_confidence_q_id_pos [0, 1, 2, 3, 6]
+[{'q_id': 5, 'specific_q_id': 3, 'question': 'jupyter运行不出来', 'answer': '用kernel里面的Clear Output清除一下重新运行', 'confidence': 1.0}, {'q_id': 176, 'specific_q_id': 55, 'question': '法古不泥', 'answer': 'on是指定两个合并的DataFrame中相同的列名（键）', 'confidence': 0.34}, {'q_id': 125, 'specific_q_id': 17, 'question': '如何打开jupyter', 'answer': '1.jupyter有图形打开方式,按住窗口键，在anaconda文件夹下面有jupyter点击可以打开  2.可以按住ctrl加R键，然后在里面输入cmd，会出现黑屏终端。在终端当中输入jupyter notebook命令', 'confidence': 0.31}, {'q_id': 150, 'specific_q_id': 38, 'question': 'index.tolist()不写tolist（）行吗？', 'answer': '不写.tolist()输出的是index类型\n\n\n\n', 'confidence': 0.23}, {'q_id': 4, 'specific_q_id': 2, 'question': 'matplotlib中文不显示问题，中文部分为方块', 'answer': "在展示中文文字前加上设置代码plt.rcParams['font.sans-serif'] = ['SimHei']", 'confidence': 0.21}]
+[2020-11-30 06:07:38 +0000] - (sanic.access)[INFO][10.20.31.118:60843]: POST http://10.20.15.95:8129/BEFAQ  200 1430
+INFO:sanic.access:
+WARNING:asyncio:Executing <Task finished coro=<Sanic.handle_request() done, defined at /root/.local/share/virtualenvs/BEFAQ-bxG4-Ian/lib/python3.6/site-packages/sanic/app.py:881> result=None created at /root/.local/share/virtualenvs/BEFAQ-bxG4-Ian/lib/python3.6/site-packages/sanic/server.py:458> took 0.106 seconds
+process_query datetime是什么
+query_word_list ['datetime', '是', '什么']
+ES查询语句： {'query': {'bool': {'must': [{'bool': {'should': [{'match': {'process_question': 'datetime'}}, {'match': {'process_question': '是'}}, {'match': {'process_question': '什么'}}]}}]}}, '_source': ['q_id', 'process_question', 'original_question', 'answer', 'specific_q_id'], 'size': 10}
+maybe_original_questions_es ['什么是长整数和字符串表达式？', 'series中items()方法是做什么的', 'iterrows（）和iteritems（）遍历有什么不一样', '“#”注示取消或添加，是怎么简便操作的？', 'enumrate是干什么用的?', 'iterrows（）是怎么遍历的', '通过订单号来关联两个表，这个提示要怎么解决？是订单号有重复的意思吗？']
+Q:datetime是什么,召回阶段用时0.006214秒
+['什么是长整数和字符串表达式？', 'series中items()方法是做什么的', 'iterrows（）和iteritems（）遍历有什么不一样', '“#”注示取消或添加，是怎么简便操作的？', 'enumrate是干什么用的?', 'iterrows（）是怎么遍历的', '通过订单号来关联两个表，这个提示要怎么解决？是订单号有重复的意思吗？']
+orgin_query_list ['datetime是什么']
+BERT: 0.022802352905273438
+np.mean: 8.940696716308594e-05
+MBERT: 3.123283386230469e-05
+reshape: 2.5272369384765625e-05
+SKlearn: 0.0005881786346435547
+Q:datetime是什么,Matching cosine_sim用时0.023609秒
+consin_sim: [0.33592159972807534, 0.26963861557995455, 0.14819350169054898, 0.2731244882542851, 0.5413297925359635, 0.3269023319895552, 0.118696468826573]
+jaccard_sim: [0.2222222222222222, 0.18181818181818182, 0.07142857142857142, 0.0625, 0.125, 0.1111111111111111, 0.043478260869565216]
+[163, 144, 153, 164, 2, 152, 106]
+['什么是长整数和字符串表达式？', 'series中items()方法是做什么的', 'iterrows（）和iteritems（）遍历有什么不一样', '“#”注示取消或添加，是怎么简便操作的？', 'enumrate是干什么用的?', 'iterrows（）是怎么遍历的', '通过订单号来关联两个表，这个提示要怎么解决？是订单号有重复的意思吗？']
+['什么是长整数和字符串表达式？', 'series中items()方法是做什么的', 'iterrows（）和iteritems（）遍历有什么不一样', '“#”注示取消或添加，是怎么简便操作的？', 'enumrate是干什么用的?', 'iterrows（）是怎么遍历的', '通过订单号来关联两个表，这个提示要怎么解决？是订单号有重复的意思吗？']
+re_rank_sim: [0.3131817242269047, 0.2520745288276, 0.13284051563815347, 0.2309995906034281, 0.4580638340287708, 0.2837440878138664, 0.10365282723517145]
+{163: [0], 144: [1], 153: [2], 164: [3], 2: [4], 152: [5], 106: [6]}
+Q:datetime是什么,Deduplicate and Threshold用时0.000019秒
+high_confidence_q_id_pos [0, 1, 3, 4, 5]
+[{'q_id': 2, 'specific_q_id': 1, 'question': 'enumrate是干什么用的?', 'answer': 'enumrate(列表)会打印出列表的下标和值，enumrate(字典)会打印出第几个键和键的名字', 'confidence': 0.46}, {'q_id': 163, 'specific_q_id': 50, 'question': '什么是长整数和字符串表达式？', 'answer': '长整型是计算机程序语言，是程序设计中数据类型的一种表现方式，一般情况下用long表示长整型，为long int的缩写，长度至少32位。字符表达式是由字符串运算符将字符型数据连接起来的式子', 'confidence': 0.31}, {'q_id': 152, 'specific_q_id': 40, 'question': 'iterrows（）是怎么遍历的', 'answer': '是按行遍历的，将DataFrame的每一行转化为（index，Series）对\n\n\n\n\n', 'confidence': 0.28}, {'q_id': 144, 'specific_q_id': 33, 'question': 'series中items()方法是做什么的', 'answer': 'items()方法用于在for循环时，可直接通过赋值2个变量获取Series的索引和值。for index,value in s.items(): 其中index是该Series的索引，value是值\n\n\n', 'confidence': 0.25}, {'q_id': 164, 'specific_q_id': 51, 'question': '“#”注示取消或添加，是怎么简便操作的？', 'answer': '用shift+3就可以进行添加和删除', 'confidence': 0.23}]
+[2020-11-30 06:07:52 +0000] - (sanic.access)[INFO][10.20.31.118:60849]: POST http://10.20.15.95:8129/BEFAQ  200 1929
+INFO:sanic.access:
+process_query jupyter如何打开
+query_word_list ['jupyter', '如何', '打开']
+ES查询语句： {'query': {'bool': {'must': [{'bool': {'should': [{'match': {'process_question': 'jupyter'}}, {'match': {'process_question': '如何'}}, {'match': {'process_question': '打开'}}]}}]}}, '_source': ['q_id', 'process_question', 'original_question', 'answer', 'specific_q_id'], 'size': 10}
+maybe_original_questions_es ['如何打开jupyter', 'jupyter运行不出来', 'Series遍历时如何获取索引呢', 'resample方法如何改变频率为星期', 'dataframe中的resample方法如何使用', 'jupyter课程基本都快坚持多久？', 'Series如何获取挨个获取数据', 'Series遍历时如何获取索引呢', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据']
+Q:jupyter如何打开,召回阶段用时0.006170秒
+['如何打开jupyter', 'jupyter运行不出来', 'Series遍历时如何获取索引呢', 'resample方法如何改变频率为星期', 'dataframe中的resample方法如何使用', 'jupyter课程基本都快坚持多久？', 'Series如何获取挨个获取数据', 'Series遍历时如何获取索引呢', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据']
+orgin_query_list ['jupyter如何打开']
+BERT: 0.023000001907348633
+np.mean: 7.62939453125e-05
+MBERT: 3.075599670410156e-05
+reshape: 2.2649765014648438e-05
+SKlearn: 0.0005474090576171875
+Q:jupyter如何打开,Matching cosine_sim用时0.023747秒
+consin_sim: [0.97813285265957, 0.3448857669202724, 0.36200517828696277, 0.21858937530093553, 0.2554038717023305, 0.15714278556498887, 0.31379183365839314, 0.36200517828696277, 0.19931958233520555, 0.19931958233520555]
+jaccard_sim: [1.0, 0.16666666666666666, 0.1111111111111111, 0.1111111111111111, 0.1111111111111111, 0.1, 0.14285714285714285, 0.1111111111111111, 0.1, 0.1]
+[125, 5, 108, 141, 140, 171, 135, 133, 109, 136]
+['如何打开jupyter', 'jupyter运行不出来', 'Series遍历时如何获取索引呢', 'resample方法如何改变频率为星期', 'dataframe中的resample方法如何使用', 'jupyter课程基本都快坚持多久？', 'Series如何获取挨个获取数据', 'Series遍历时如何获取索引呢', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据']
+['如何打开jupyter', 'jupyter运行不出来', 'series遍历时如何获取索引呢', 'resample方法如何改变频率为星期', 'dataframe中的resample方法如何使用', 'jupyter课程基本都快坚持多久？', 'series如何获取挨个获取数据', 'series遍历时如何获取索引呢', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据']
+re_rank_sim: [0.982506282127656, 0.30924194686955125, 0.31182636485179244, 0.19709372246297066, 0.2265453195840866, 0.1457142284519911, 0.2796048954981431, 0.31182636485179244, 0.17945566586816447, 0.17945566586816447]
+{125: [0], 5: [1], 108: [2], 141: [3], 140: [4], 171: [5], 135: [6], 133: [7], 109: [8], 136: [9]}
+Q:jupyter如何打开,Deduplicate and Threshold用时0.000023秒
+high_confidence_q_id_pos [0, 1, 2, 4, 6, 7]
+[{'q_id': 125, 'specific_q_id': 17, 'question': '如何打开jupyter', 'answer': '1.jupyter有图形打开方式,按住窗口键，在anaconda文件夹下面有jupyter点击可以打开  2.可以按住ctrl加R键，然后在里面输入cmd，会出现黑屏终端。在终端当中输入jupyter notebook命令', 'confidence': 0.98}, {'q_id': 5, 'specific_q_id': 3, 'question': 'jupyter运行不出来', 'answer': '用kernel里面的Clear Output清除一下重新运行', 'confidence': 0.31}, {'q_id': 108, 'specific_q_id': 9, 'question': 'Series遍历时如何获取索引呢', 'answer': '通过for循环Series的keys()方法进行获取', 'confidence': 0.31}, {'q_id': 133, 'specific_q_id': 23, 'question': 'Series遍历时如何获取索引呢', 'answer': '通过for循环Series的keys()方法进行获取\n', 'confidence': 0.31}, {'q_id': 135, 'specific_q_id': 24, 'question': 'Series如何获取挨个获取数据', 'answer': '通过for循环Series,循环出来的每个数据都是\n', 'confidence': 0.28}]
+[2020-11-30 06:08:27 +0000] - (sanic.access)[INFO][10.20.31.118:60871]: POST http://10.20.15.95:8129/BEFAQ  200 1400
+INFO:sanic.access:
+process_query dataframe中的resample方法如何使用
+query_word_list ['dataframe', '中', '的', 'resample', '方法', '如何', '使用']
+ES查询语句： {'query': {'bool': {'must': [{'bool': {'should': [{'match': {'process_question': 'dataframe'}}, {'match': {'process_question': '中'}}, {'match': {'process_question': '的'}}, {'match': {'process_question': 'resample'}}, {'match': {'process_question': '方法'}}, {'match': {'process_question': '如何'}}, {'match': {'process_question': '使用'}}]}}]}}, '_source': ['q_id', 'process_question', 'original_question', 'answer', 'specific_q_id'], 'size': 10}
+maybe_original_questions_es ['dataframe中的resample方法如何使用', 'resample方法如何改变频率为星期', 'dataframe中取行怎么取', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据', 'dataframe中reindex函数做什么的', 'DateFrame的info方法是什么作用', '遍历DataFrame时遍历的列名打印不出来', 'dataframe中取出某个元素怎么办', 'dataframe中取行怎么取']
+Q:dataframe中的resample方法如何使用,召回阶段用时0.006811秒
+['dataframe中的resample方法如何使用', 'resample方法如何改变频率为星期', 'dataframe中取行怎么取', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据', 'dataframe中reindex函数做什么的', 'DateFrame的info方法是什么作用', '遍历DataFrame时遍历的列名打印不出来', 'dataframe中取出某个元素怎么办', 'dataframe中取行怎么取']
+orgin_query_list ['dataframe中的resample方法如何使用']
+BERT: 0.05241250991821289
+np.mean: 6.413459777832031e-05
+MBERT: 2.288818359375e-05
+reshape: 2.002716064453125e-05
+SKlearn: 0.00044417381286621094
+Q:dataframe中的resample方法如何使用,Matching cosine_sim用时0.053031秒
+consin_sim: [1, 0.32030304775294793, 0.7643319468270484, 0.7487033409454119, 0.7487033409454119, 0.6213238760492654, 0.7197372433693721, 0.39459177985681126, 0.651130420408236, 0.7643319468270483]
+jaccard_sim: [1.0, 0.2727272727272727, 0.1, 0.36363636363636365, 0.36363636363636365, 0.2727272727272727, 0.16666666666666666, 0.14285714285714285, 0.18181818181818182, 0.1]
+[140, 141, 131, 109, 136, 138, 6, 146, 137, 107]
+['dataframe中的resample方法如何使用', 'resample方法如何改变频率为星期', 'dataframe中取行怎么取', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据', 'dataframe中reindex函数做什么的', 'DateFrame的info方法是什么作用', '遍历DataFrame时遍历的列名打印不出来', 'dataframe中取出某个元素怎么办', 'dataframe中取行怎么取']
+['dataframe中的resample方法如何使用', 'resample方法如何改变频率为星期', 'dataframe中取行怎么取', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据', 'dataframe中reindex函数做什么的', 'dateframe的info方法是什么作用', '遍历dataframe时遍历的列名打印不出来', 'dataframe中取出某个元素怎么办', 'dataframe中取行怎么取']
+re_rank_sim: [1.0, 0.31078789274781293, 0.6314655574616388, 0.6716899454836023, 0.6716899454836023, 0.5516045553848669, 0.609123128028831, 0.34424485245687764, 0.5572679726902252, 0.6314655574616387]
+{140: [0], 141: [1], 131: [2], 109: [3], 136: [4], 138: [5], 6: [6], 146: [7], 137: [8], 107: [9]}
+Q:dataframe中的resample方法如何使用,Deduplicate and Threshold用时0.000019秒
+high_confidence_q_id_pos [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[{'q_id': 140, 'specific_q_id': 29, 'question': 'dataframe中的resample方法如何使用', 'answer': "Pandas中的resample，重新采样，是对原样本重新处理的一个方法，是一个对常规时间序列数据重新采样和频率转换的便捷的方法，df.resample('3D').sum() 就是根据3天为频率求出三天的数据之和\n\n", 'confidence': 1.0}, {'q_id': 109, 'specific_q_id': 10, 'question': 'dataframe中如何获取某行某列的数据', 'answer': '其作用是创建一个新索引的新对象，reindex能修改行索引和列索引', 'confidence': 0.67}, {'q_id': 136, 'specific_q_id': 25, 'question': 'dataframe中如何获取某行某列的数据', 'answer': '通过切片操作，获取你想要的行或者列以及某个元素，例如：df.loc["xx":"zz"]，xx和zz是你的行索引\n', 'confidence': 0.67}, {'q_id': 131, 'specific_q_id': 21, 'question': 'dataframe中取行怎么取', 'answer': '通过loc和iloc方法取行数据，直接["列名"]取整列的数据\n', 'confidence': 0.63}, {'q_id': 107, 'specific_q_id': 8, 'question': 'dataframe中取行怎么取', 'answer': '通过loc和iloc方法取行数据，直接["列名"]取整列的数据裙裙群', 'confidence': 0.63}]
+[2020-11-30 06:08:53 +0000] - (sanic.access)[INFO][10.20.31.118:60881]: POST http://10.20.15.95:8129/BEFAQ  200 1833
+INFO:sanic.access:
+process_query 如何打开jupyter
+query_word_list ['如何', '打开', 'jupyter']
+ES查询语句： {'query': {'bool': {'must': [{'bool': {'should': [{'match': {'process_question': '如何'}}, {'match': {'process_question': '打开'}}, {'match': {'process_question': 'jupyter'}}]}}]}}, '_source': ['q_id', 'process_question', 'original_question', 'answer', 'specific_q_id'], 'size': 10}
+maybe_original_questions_es ['如何打开jupyter', 'jupyter运行不出来', 'Series遍历时如何获取索引呢', 'resample方法如何改变频率为星期', 'dataframe中的resample方法如何使用', 'jupyter课程基本都快坚持多久？', 'Series如何获取挨个获取数据', 'Series遍历时如何获取索引呢', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据']
+Q:如何打开jupyter,召回阶段用时0.006295秒
+['如何打开jupyter', 'jupyter运行不出来', 'Series遍历时如何获取索引呢', 'resample方法如何改变频率为星期', 'dataframe中的resample方法如何使用', 'jupyter课程基本都快坚持多久？', 'Series如何获取挨个获取数据', 'Series遍历时如何获取索引呢', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据']
+orgin_query_list ['如何打开jupyter']
+BERT: 0.025837182998657227
+np.mean: 9.846687316894531e-05
+MBERT: 4.291534423828125e-05
+reshape: 3.0994415283203125e-05
+SKlearn: 0.0007565021514892578
+Q:如何打开jupyter,Matching cosine_sim用时0.026849秒
+consin_sim: [1.0, 0.34627163210852197, 0.4089949497516762, 0.2526386533858436, 0.2806804915811756, 0.1777104563016188, 0.33468086977210393, 0.4089949497516762, 0.22377071830421832, 0.22377071830421832]
+jaccard_sim: [1.0, 0.16666666666666666, 0.1111111111111111, 0.1111111111111111, 0.1111111111111111, 0.1, 0.14285714285714285, 0.1111111111111111, 0.1, 0.1]
+[125, 5, 108, 141, 140, 171, 135, 133, 109, 136]
+['如何打开jupyter', 'jupyter运行不出来', 'Series遍历时如何获取索引呢', 'resample方法如何改变频率为星期', 'dataframe中的resample方法如何使用', 'jupyter课程基本都快坚持多久？', 'Series如何获取挨个获取数据', 'Series遍历时如何获取索引呢', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据']
+['如何打开jupyter', 'jupyter运行不出来', 'series遍历时如何获取索引呢', 'resample方法如何改变频率为星期', 'dataframe中的resample方法如何使用', 'jupyter课程基本都快坚持多久？', 'series如何获取挨个获取数据', 'series遍历时如何获取索引呢', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据']
+re_rank_sim: [1.0, 0.3103506390201509, 0.3494181820235632, 0.22433314493089715, 0.2467666154871627, 0.16216836504129506, 0.29631612438911176, 0.3494181820235632, 0.1990165746433747, 0.1990165746433747]
+{125: [0], 5: [1], 108: [2], 141: [3], 140: [4], 171: [5], 135: [6], 133: [7], 109: [8], 136: [9]}
+Q:如何打开jupyter,Deduplicate and Threshold用时0.000023秒
+high_confidence_q_id_pos [0, 1, 2, 3, 4, 6, 7]
+[{'q_id': 125, 'specific_q_id': 17, 'question': '如何打开jupyter', 'answer': '1.jupyter有图形打开方式,按住窗口键，在anaconda文件夹下面有jupyter点击可以打开  2.可以按住ctrl加R键，然后在里面输入cmd，会出现黑屏终端。在终端当中输入jupyter notebook命令', 'confidence': 1.0}, {'q_id': 108, 'specific_q_id': 9, 'question': 'Series遍历时如何获取索引呢', 'answer': '通过for循环Series的keys()方法进行获取', 'confidence': 0.35}, {'q_id': 133, 'specific_q_id': 23, 'question': 'Series遍历时如何获取索引呢', 'answer': '通过for循环Series的keys()方法进行获取\n', 'confidence': 0.35}, {'q_id': 5, 'specific_q_id': 3, 'question': 'jupyter运行不出来', 'answer': '用kernel里面的Clear Output清除一下重新运行', 'confidence': 0.31}, {'q_id': 135, 'specific_q_id': 24, 'question': 'Series如何获取挨个获取数据', 'answer': '通过for循环Series,循环出来的每个数据都是\n', 'confidence': 0.3}]
+[2020-11-30 06:09:11 +0000] - (sanic.access)[INFO][10.20.31.118:60887]: POST http://10.20.15.95:8129/BEFAQ  200 1398
+INFO:sanic.access:
+process_query 调用sns.jointplot()，x轴的标签怎么设置
+query_word_list ['调用', 'sns', '.', 'jointplot', '(', ')', '，', 'x', '轴', '的', '标签', '怎么', '设置']
+ES查询语句： {'query': {'bool': {'must': [{'bool': {'should': [{'match': {'process_question': '调用'}}, {'match': {'process_question': 'sns'}}, {'match': {'process_question': '.'}}, {'match': {'process_question': 'jointplot'}}, {'match': {'process_question': '('}}, {'match': {'process_question': ')'}}, {'match': {'process_question': '，'}}, {'match': {'process_question': 'x'}}, {'match': {'process_question': '轴'}}, {'match': {'process_question': '的'}}, {'match': {'process_question': '标签'}}, {'match': {'process_question': '怎么'}}, {'match': {'process_question': '设置'}}]}}]}}, '_source': ['q_id', 'process_question', 'original_question', 'answer', 'specific_q_id'], 'size': 10}
+maybe_original_questions_es ['老师，调用sns.jointplot()，x轴的标签怎么设置', 'iterrows（）是怎么遍历的', "出现No module name 'pandas'怎么处理", '“#”注示取消或添加，是怎么简便操作的？', '遍历DataFrame时遍历的列名打印不出来', "NameError:name 'plt' is not defined怎么解决", 'figsize中单位怎么换为多少cm', 'dataframe中的resample方法如何使用', 'dataframe中取行怎么取', "NameError:name 'plt' is not defined怎么解决"]
+Q:调用sns.jointplot()，x轴的标签怎么设置,召回阶段用时0.008315秒
+['老师，调用sns.jointplot()，x轴的标签怎么设置', 'iterrows（）是怎么遍历的', "出现No module name 'pandas'怎么处理", '“#”注示取消或添加，是怎么简便操作的？', '遍历DataFrame时遍历的列名打印不出来', "NameError:name 'plt' is not defined怎么解决", 'figsize中单位怎么换为多少cm', 'dataframe中的resample方法如何使用', 'dataframe中取行怎么取', "NameError:name 'plt' is not defined怎么解决"]
+orgin_query_list ['调用sns.jointplot()', 'x轴的标签怎么设置']
+BERT: 0.0686345100402832
+np.mean: 7.724761962890625e-05
+MBERT: 3.24249267578125e-05
+reshape: 2.2172927856445312e-05
+SKlearn: 0.0004851818084716797
+Q:调用sns.jointplot()，x轴的标签怎么设置,Matching cosine_sim用时0.069315秒
+consin_sim: [0.8436656461533171, 0.43418881496527517, 0.2637926004437465, 0.35795670724871276, 0.13644522945631177, 0.21032943902796652, 0.280629265044321, 0.3179309172184277, 0.4070485457610709, 0.21032943902796652]
+jaccard_sim: [1.0, 0.1111111111111111, 0.041666666666666664, 0.125, 0.047619047619047616, 0.037037037037037035, 0.05, 0.05263157894736842, 0.0625, 0.037037037037037035]
+[123, 152, 126, 164, 146, 122, 155, 140, 107, 129]
+['老师，调用sns.jointplot()，x轴的标签怎么设置', 'iterrows（）是怎么遍历的', "出现No module name 'pandas'怎么处理", '“#”注示取消或添加，是怎么简便操作的？', '遍历DataFrame时遍历的列名打印不出来', "NameError:name 'plt' is not defined怎么解决", 'figsize中单位怎么换为多少cm', 'dataframe中的resample方法如何使用', 'dataframe中取行怎么取', "NameError:name 'plt' is not defined怎么解决"]
+['老师，调用sns.jointplot()，x轴的标签怎么设置', 'iterrows（）是怎么遍历的', "出现no module name 'pandas'怎么处理", '“#”注示取消或添加，是怎么简便操作的？', '遍历dataframe时遍历的列名打印不出来', "nameerror:name 'plt' is not defined怎么解决", 'figsize中单位怎么换为多少cm', 'dataframe中的resample方法如何使用', 'dataframe中取行怎么取', "nameerror:name 'plt' is not defined怎么解决"]
+re_rank_sim: [0.8749325169226536, 0.36957327419444236, 0.21936741368833057, 0.31136536579897023, 0.11867999308885893, 0.17567095862978066, 0.23450341203545683, 0.2648710495642158, 0.33813883660885674, 0.17567095862978066]
+{123: [0], 152: [1], 126: [2], 164: [3], 146: [4], 122: [5], 155: [6], 140: [7], 107: [8], 129: [9]}
+Q:调用sns.jointplot()，x轴的标签怎么设置,Deduplicate and Threshold用时0.000017秒
+high_confidence_q_id_pos [0, 1, 2, 3, 6, 7, 8]
+[{'q_id': 123, 'specific_q_id': 16, 'question': '老师，调用sns.jointplot()，x轴的标签怎么设置', 'answer': '可以先将这个图赋值给一个变量,然后通过这个变量调用set_xticks()设置x轴的刻度', 'confidence': 0.87}, {'q_id': 152, 'specific_q_id': 40, 'question': 'iterrows（）是怎么遍历的', 'answer': '是按行遍历的，将DataFrame的每一行转化为（index，Series）对\n\n\n\n\n', 'confidence': 0.37}, {'q_id': 107, 'specific_q_id': 8, 'question': 'dataframe中取行怎么取', 'answer': '通过loc和iloc方法取行数据，直接["列名"]取整列的数据裙裙群', 'confidence': 0.34}, {'q_id': 164, 'specific_q_id': 51, 'question': '“#”注示取消或添加，是怎么简便操作的？', 'answer': '用shift+3就可以进行添加和删除', 'confidence': 0.31}, {'q_id': 140, 'specific_q_id': 29, 'question': 'dataframe中的resample方法如何使用', 'answer': "Pandas中的resample，重新采样，是对原样本重新处理的一个方法，是一个对常规时间序列数据重新采样和频率转换的便捷的方法，df.resample('3D').sum() 就是根据3天为频率求出三天的数据之和\n\n", 'confidence': 0.26}]
+[2020-11-30 06:09:27 +0000] - (sanic.access)[INFO][10.20.31.118:60892]: POST http://10.20.15.95:8129/BEFAQ  200 1774
+INFO:sanic.access:
+process_query jupyter
+query_word_list ['jupyter']
+ES查询语句： {'query': {'bool': {'must': [{'bool': {'should': [{'match': {'process_question': 'jupyter'}}]}}]}}, '_source': ['q_id', 'process_question', 'original_question', 'answer', 'specific_q_id'], 'size': 10}
+maybe_original_questions_es ['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+Q:jupyter,召回阶段用时0.005670秒
+['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+orgin_query_list ['jupyter']
+BERT: 0.02240276336669922
+np.mean: 8.869171142578125e-05
+MBERT: 2.1457672119140625e-05
+reshape: 1.2636184692382812e-05
+SKlearn: 0.0005965232849121094
+Q:jupyter,Matching cosine_sim用时0.023191秒
+consin_sim: [0.2712891352601786, 0.24307801828398218, -0.04403442438865092]
+jaccard_sim: [0.25, 0.3333333333333333, 0.125]
+[5, 125, 171]
+['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+re_rank_sim: [0.2670313082081429, 0.2611290812938524, -0.010227539510920737]
+{5: [0], 125: [1], 171: [2]}
+Q:jupyter,Deduplicate and Threshold用时0.000015秒
+high_confidence_q_id_pos [0, 1]
+[{'q_id': 5, 'specific_q_id': 3, 'question': 'jupyter运行不出来', 'answer': '用kernel里面的Clear Output清除一下重新运行', 'confidence': 0.27}, {'q_id': 125, 'specific_q_id': 17, 'question': '如何打开jupyter', 'answer': '1.jupyter有图形打开方式,按住窗口键，在anaconda文件夹下面有jupyter点击可以打开  2.可以按住ctrl加R键，然后在里面输入cmd，会出现黑屏终端。在终端当中输入jupyter notebook命令', 'confidence': 0.26}]
+[2020-11-30 06:09:43 +0000] - (sanic.access)[INFO][10.20.31.118:60895]: POST http://10.20.15.95:8129/BEFAQ  200 709
+INFO:sanic.access:
+process_query series中items()方法是做什么的
+query_word_list ['series', '中', 'items', '(', ')', '方法', '是', '做', '什么', '的']
+ES查询语句： {'query': {'bool': {'must': [{'bool': {'should': [{'match': {'process_question': 'series'}}, {'match': {'process_question': '中'}}, {'match': {'process_question': 'items'}}, {'match': {'process_question': '('}}, {'match': {'process_question': ')'}}, {'match': {'process_question': '方法'}}, {'match': {'process_question': '是'}}, {'match': {'process_question': '做'}}, {'match': {'process_question': '什么'}}, {'match': {'process_question': '的'}}]}}]}}, '_source': ['q_id', 'process_question', 'original_question', 'answer', 'specific_q_id'], 'size': 10}
+maybe_original_questions_es ['series中items()方法是做什么的', 'dataframe中的resample方法如何使用', 'dataframe中reindex函数做什么的', 'DateFrame的info方法是什么作用', '什么是长整数和字符串表达式？', '“#”注示取消或添加，是怎么简便操作的？', 'dataframe中取行怎么取', 'enumrate是干什么用的?', 'iterrows（）是怎么遍历的', 'Series遍历时如何获取索引呢']
+Q:series中items()方法是做什么的,召回阶段用时0.006813秒
+['series中items()方法是做什么的', 'dataframe中的resample方法如何使用', 'dataframe中reindex函数做什么的', 'DateFrame的info方法是什么作用', '什么是长整数和字符串表达式？', '“#”注示取消或添加，是怎么简便操作的？', 'dataframe中取行怎么取', 'enumrate是干什么用的?', 'iterrows（）是怎么遍历的', 'Series遍历时如何获取索引呢']
+orgin_query_list ['series中items()方法是做什么的']
+BERT: 0.04020524024963379
+np.mean: 6.961822509765625e-05
+MBERT: 2.6464462280273438e-05
+reshape: 2.1219253540039062e-05
+SKlearn: 0.00046515464782714844
+Q:series中items()方法是做什么的,Matching cosine_sim用时0.040852秒
+consin_sim: [1, 0.3239610646418195, 0.2635823631905256, 0.36165599474731147, 0.3591266426436309, 0.3609709111813221, 0.4222352561453161, 0.41604888392943457, 0.5067866594733438, 0.5902028533571562]
+jaccard_sim: [1.0, 0.21428571428571427, 0.3076923076923077, 0.3076923076923077, 0.125, 0.09090909090909091, 0.0, 0.14285714285714285, 0.13333333333333333, 0.0625]
+[144, 140, 138, 6, 163, 164, 131, 2, 152, 108]
+['series中items()方法是做什么的', 'dataframe中的resample方法如何使用', 'dataframe中reindex函数做什么的', 'DateFrame的info方法是什么作用', '什么是长整数和字符串表达式？', '“#”注示取消或添加，是怎么简便操作的？', 'dataframe中取行怎么取', 'enumrate是干什么用的?', 'iterrows（）是怎么遍历的', 'Series遍历时如何获取索引呢']
+['series中items()方法是做什么的', 'dataframe中的resample方法如何使用', 'dataframe中reindex函数做什么的', 'dateframe的info方法是什么作用', '什么是长整数和字符串表达式？', '“#”注示取消或添加，是怎么简便操作的？', 'dataframe中取行怎么取', 'enumrate是干什么用的?', 'iterrows（）是怎么遍历的', 'series遍历时如何获取索引呢']
+re_rank_sim: [1.0, 0.3020259945705985, 0.272404352090882, 0.35086325733631074, 0.31230131411490475, 0.30695854712687587, 0.3377882049162529, 0.3614105357149763, 0.43209599424534173, 0.484662282685725]
+{144: [0], 140: [1], 138: [2], 6: [3], 163: [4], 164: [5], 131: [6], 2: [7], 152: [8], 108: [9]}
+Q:series中items()方法是做什么的,Deduplicate and Threshold用时0.000019秒
+high_confidence_q_id_pos [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[{'q_id': 144, 'specific_q_id': 33, 'question': 'series中items()方法是做什么的', 'answer': 'items()方法用于在for循环时，可直接通过赋值2个变量获取Series的索引和值。for index,value in s.items(): 其中index是该Series的索引，value是值\n\n\n', 'confidence': 1.0}, {'q_id': 108, 'specific_q_id': 9, 'question': 'Series遍历时如何获取索引呢', 'answer': '通过for循环Series的keys()方法进行获取', 'confidence': 0.48}, {'q_id': 152, 'specific_q_id': 40, 'question': 'iterrows（）是怎么遍历的', 'answer': '是按行遍历的，将DataFrame的每一行转化为（index，Series）对\n\n\n\n\n', 'confidence': 0.43}, {'q_id': 2, 'specific_q_id': 1, 'question': 'enumrate是干什么用的?', 'answer': 'enumrate(列表)会打印出列表的下标和值，enumrate(字典)会打印出第几个键和键的名字', 'confidence': 0.36}, {'q_id': 6, 'specific_q_id': 4, 'question': 'DateFrame的info方法是什么作用', 'answer': 'info主要展示数据的基本信息，包括列名、数据个数、类型等。', 'confidence': 0.35}]
+[2020-11-30 06:09:43 +0000] - (sanic.access)[INFO][10.20.31.118:60897]: POST http://10.20.15.95:8129/BEFAQ  200 1532
+INFO:sanic.access:
+process_query jupyter
+query_word_list ['jupyter']
+ES查询语句： {'query': {'bool': {'must': [{'bool': {'should': [{'match': {'process_question': 'jupyter'}}]}}]}}, '_source': ['q_id', 'process_question', 'original_question', 'answer', 'specific_q_id'], 'size': 10}
+maybe_original_questions_es ['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+Q:jupyter,召回阶段用时0.005545秒
+['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+orgin_query_list ['jupyter']
+BERT: 0.020713090896606445
+np.mean: 8.630752563476562e-05
+MBERT: 1.6927719116210938e-05
+reshape: 1.3113021850585938e-05
+SKlearn: 0.0005879402160644531
+Q:jupyter,Matching cosine_sim用时0.021484秒
+consin_sim: [0.2712891352601786, 0.24307801828398218, -0.04403442438865092]
+jaccard_sim: [0.25, 0.3333333333333333, 0.125]
+[5, 125, 171]
+['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+re_rank_sim: [0.2670313082081429, 0.2611290812938524, -0.010227539510920737]
+{5: [0], 125: [1], 171: [2]}
+Q:jupyter,Deduplicate and Threshold用时0.000015秒
+high_confidence_q_id_pos [0, 1]
+[{'q_id': 5, 'specific_q_id': 3, 'question': 'jupyter运行不出来', 'answer': '用kernel里面的Clear Output清除一下重新运行', 'confidence': 0.27}, {'q_id': 125, 'specific_q_id': 17, 'question': '如何打开jupyter', 'answer': '1.jupyter有图形打开方式,按住窗口键，在anaconda文件夹下面有jupyter点击可以打开  2.可以按住ctrl加R键，然后在里面输入cmd，会出现黑屏终端。在终端当中输入jupyter notebook命令', 'confidence': 0.26}]
+[2020-11-30 06:13:41 +0000] - (sanic.access)[INFO][10.20.31.118:60981]: POST http://10.20.15.95:8129/BEFAQ  200 709
+INFO:sanic.access:
+process_query jupyter
+query_word_list ['jupyter']
+ES查询语句： {'query': {'bool': {'must': [{'bool': {'should': [{'match': {'process_question': 'jupyter'}}]}}]}}, '_source': ['q_id', 'process_question', 'original_question', 'answer', 'specific_q_id'], 'size': 10}
+maybe_original_questions_es ['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+Q:jupyter,召回阶段用时0.005610秒
+['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+orgin_query_list ['jupyter']
+BERT: 0.02036428451538086
+np.mean: 7.843971252441406e-05
+MBERT: 1.6927719116210938e-05
+reshape: 1.2636184692382812e-05
+SKlearn: 0.0005478858947753906
+Q:jupyter,Matching cosine_sim用时0.021085秒
+consin_sim: [0.2712891352601786, 0.24307801828398218, -0.04403442438865092]
+jaccard_sim: [0.25, 0.3333333333333333, 0.125]
+[5, 125, 171]
+['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+re_rank_sim: [0.2670313082081429, 0.2611290812938524, -0.010227539510920737]
+{5: [0], 125: [1], 171: [2]}
+Q:jupyter,Deduplicate and Threshold用时0.000014秒
+high_confidence_q_id_pos [0, 1]
+[{'q_id': 5, 'specific_q_id': 3, 'question': 'jupyter运行不出来', 'answer': '用kernel里面的Clear Output清除一下重新运行', 'confidence': 0.27}, {'q_id': 125, 'specific_q_id': 17, 'question': '如何打开jupyter', 'answer': '1.jupyter有图形打开方式,按住窗口键，在anaconda文件夹下面有jupyter点击可以打开  2.可以按住ctrl加R键，然后在里面输入cmd，会出现黑屏终端。在终端当中输入jupyter notebook命令', 'confidence': 0.26}]
+[2020-11-30 06:13:43 +0000] - (sanic.access)[INFO][10.20.31.118:60984]: POST http://10.20.15.95:8129/BEFAQ  200 709
+INFO:sanic.access:
+process_query jupyter
+query_word_list ['jupyter']
+ES查询语句： {'query': {'bool': {'must': [{'bool': {'should': [{'match': {'process_question': 'jupyter'}}]}}]}}, '_source': ['q_id', 'process_question', 'original_question', 'answer', 'specific_q_id'], 'size': 10}
+maybe_original_questions_es ['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+Q:jupyter,召回阶段用时0.005668秒
+['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+orgin_query_list ['jupyter']
+BERT: 0.021157503128051758
+np.mean: 8.988380432128906e-05
+MBERT: 1.9550323486328125e-05
+reshape: 1.8596649169921875e-05
+SKlearn: 0.0006976127624511719
+Q:jupyter,Matching cosine_sim用时0.022059秒
+consin_sim: [0.2712891352601786, 0.24307801828398218, -0.04403442438865092]
+jaccard_sim: [0.25, 0.3333333333333333, 0.125]
+[5, 125, 171]
+['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+re_rank_sim: [0.2670313082081429, 0.2611290812938524, -0.010227539510920737]
+{5: [0], 125: [1], 171: [2]}
+Q:jupyter,Deduplicate and Threshold用时0.000017秒
+high_confidence_q_id_pos [0, 1]
+[{'q_id': 5, 'specific_q_id': 3, 'question': 'jupyter运行不出来', 'answer': '用kernel里面的Clear Output清除一下重新运行', 'confidence': 0.27}, {'q_id': 125, 'specific_q_id': 17, 'question': '如何打开jupyter', 'answer': '1.jupyter有图形打开方式,按住窗口键，在anaconda文件夹下面有jupyter点击可以打开  2.可以按住ctrl加R键，然后在里面输入cmd，会出现黑屏终端。在终端当中输入jupyter notebook命令', 'confidence': 0.26}]
+[2020-11-30 06:13:49 +0000] - (sanic.access)[INFO][10.20.31.118:60997]: POST http://10.20.15.95:8129/BEFAQ  200 709
+INFO:sanic.access:
+process_query jupyter
+query_word_list ['jupyter']
+ES查询语句： {'query': {'bool': {'must': [{'bool': {'should': [{'match': {'process_question': 'jupyter'}}]}}]}}, '_source': ['q_id', 'process_question', 'original_question', 'answer', 'specific_q_id'], 'size': 10}
+maybe_original_questions_es ['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+Q:jupyter,召回阶段用时0.005768秒
+['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+orgin_query_list ['jupyter']
+BERT: 0.020601749420166016
+np.mean: 7.724761962890625e-05
+MBERT: 1.621246337890625e-05
+reshape: 1.0967254638671875e-05
+SKlearn: 0.0005028247833251953
+Q:jupyter,Matching cosine_sim用时0.021270秒
+consin_sim: [0.2712891352601786, 0.24307801828398218, -0.04403442438865092]
+jaccard_sim: [0.25, 0.3333333333333333, 0.125]
+[5, 125, 171]
+['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+re_rank_sim: [0.2670313082081429, 0.2611290812938524, -0.010227539510920737]
+{5: [0], 125: [1], 171: [2]}
+Q:jupyter,Deduplicate and Threshold用时0.000013秒
+high_confidence_q_id_pos [0, 1]
+[{'q_id': 5, 'specific_q_id': 3, 'question': 'jupyter运行不出来', 'answer': '用kernel里面的Clear Output清除一下重新运行', 'confidence': 0.27}, {'q_id': 125, 'specific_q_id': 17, 'question': '如何打开jupyter', 'answer': '1.jupyter有图形打开方式,按住窗口键，在anaconda文件夹下面有jupyter点击可以打开  2.可以按住ctrl加R键，然后在里面输入cmd，会出现黑屏终端。在终端当中输入jupyter notebook命令', 'confidence': 0.26}]
+[2020-11-30 06:13:56 +0000] - (sanic.access)[INFO][10.20.31.118:61015]: POST http://10.20.15.95:8129/BEFAQ  200 709
+INFO:sanic.access:
+process_query jupyter
+query_word_list ['jupyter']
+ES查询语句： {'query': {'bool': {'must': [{'bool': {'should': [{'match': {'process_question': 'jupyter'}}]}}]}}, '_source': ['q_id', 'process_question', 'original_question', 'answer', 'specific_q_id'], 'size': 10}
+maybe_original_questions_es ['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+Q:jupyter,召回阶段用时0.005574秒
+['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+orgin_query_list ['jupyter']
+BERT: 0.020754098892211914
+np.mean: 8.869171142578125e-05
+MBERT: 1.9311904907226562e-05
+reshape: 1.5735626220703125e-05
+SKlearn: 0.0007195472717285156
+Q:jupyter,Matching cosine_sim用时0.021669秒
+consin_sim: [0.2712891352601786, 0.24307801828398218, -0.04403442438865092]
+jaccard_sim: [0.25, 0.3333333333333333, 0.125]
+[5, 125, 171]
+['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+re_rank_sim: [0.2670313082081429, 0.2611290812938524, -0.010227539510920737]
+{5: [0], 125: [1], 171: [2]}
+Q:jupyter,Deduplicate and Threshold用时0.000018秒
+high_confidence_q_id_pos [0, 1]
+[{'q_id': 5, 'specific_q_id': 3, 'question': 'jupyter运行不出来', 'answer': '用kernel里面的Clear Output清除一下重新运行', 'confidence': 0.27}, {'q_id': 125, 'specific_q_id': 17, 'question': '如何打开jupyter', 'answer': '1.jupyter有图形打开方式,按住窗口键，在anaconda文件夹下面有jupyter点击可以打开  2.可以按住ctrl加R键，然后在里面输入cmd，会出现黑屏终端。在终端当中输入jupyter notebook命令', 'confidence': 0.26}]
+[2020-11-30 06:13:57 +0000] - (sanic.access)[INFO][10.20.31.118:61017]: POST http://10.20.15.95:8129/BEFAQ  200 709
+INFO:sanic.access:
+process_query jupyter
+query_word_list ['jupyter']
+ES查询语句： {'query': {'bool': {'must': [{'bool': {'should': [{'match': {'process_question': 'jupyter'}}]}}]}}, '_source': ['q_id', 'process_question', 'original_question', 'answer', 'specific_q_id'], 'size': 10}
+maybe_original_questions_es ['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+Q:jupyter,召回阶段用时0.005418秒
+['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+orgin_query_list ['jupyter']
+BERT: 0.01887345314025879
+np.mean: 9.107589721679688e-05
+MBERT: 2.0265579223632812e-05
+reshape: 1.5735626220703125e-05
+SKlearn: 0.0007226467132568359
+Q:jupyter,Matching cosine_sim用时0.019796秒
+consin_sim: [0.2712891352601786, 0.24307801828398218, -0.04403442438865092]
+jaccard_sim: [0.25, 0.3333333333333333, 0.125]
+[5, 125, 171]
+['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+re_rank_sim: [0.2670313082081429, 0.2611290812938524, -0.010227539510920737]
+{5: [0], 125: [1], 171: [2]}
+Q:jupyter,Deduplicate and Threshold用时0.000017秒
+high_confidence_q_id_pos [0, 1]
+[{'q_id': 5, 'specific_q_id': 3, 'question': 'jupyter运行不出来', 'answer': '用kernel里面的Clear Output清除一下重新运行', 'confidence': 0.27}, {'q_id': 125, 'specific_q_id': 17, 'question': '如何打开jupyter', 'answer': '1.jupyter有图形打开方式,按住窗口键，在anaconda文件夹下面有jupyter点击可以打开  2.可以按住ctrl加R键，然后在里面输入cmd，会出现黑屏终端。在终端当中输入jupyter notebook命令', 'confidence': 0.26}]
+[2020-11-30 06:13:57 +0000] - (sanic.access)[INFO][10.20.31.118:61019]: POST http://10.20.15.95:8129/BEFAQ  200 709
+INFO:sanic.access:
+process_query jupyter
+query_word_list ['jupyter']
+ES查询语句： {'query': {'bool': {'must': [{'bool': {'should': [{'match': {'process_question': 'jupyter'}}]}}]}}, '_source': ['q_id', 'process_question', 'original_question', 'answer', 'specific_q_id'], 'size': 10}
+maybe_original_questions_es ['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+Q:jupyter,召回阶段用时0.005638秒
+['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+orgin_query_list ['jupyter']
+BERT: 0.021134138107299805
+np.mean: 9.036064147949219e-05
+MBERT: 1.9073486328125e-05
+reshape: 1.5497207641601562e-05
+SKlearn: 0.0006697177886962891
+Q:jupyter,Matching cosine_sim用时0.022002秒
+consin_sim: [0.2712891352601786, 0.24307801828398218, -0.04403442438865092]
+jaccard_sim: [0.25, 0.3333333333333333, 0.125]
+[5, 125, 171]
+['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+re_rank_sim: [0.2670313082081429, 0.2611290812938524, -0.010227539510920737]
+{5: [0], 125: [1], 171: [2]}
+Q:jupyter,Deduplicate and Threshold用时0.000017秒
+high_confidence_q_id_pos [0, 1]
+[{'q_id': 5, 'specific_q_id': 3, 'question': 'jupyter运行不出来', 'answer': '用kernel里面的Clear Output清除一下重新运行', 'confidence': 0.27}, {'q_id': 125, 'specific_q_id': 17, 'question': '如何打开jupyter', 'answer': '1.jupyter有图形打开方式,按住窗口键，在anaconda文件夹下面有jupyter点击可以打开  2.可以按住ctrl加R键，然后在里面输入cmd，会出现黑屏终端。在终端当中输入jupyter notebook命令', 'confidence': 0.26}]
+[2020-11-30 06:14:01 +0000] - (sanic.access)[INFO][10.20.31.118:61029]: POST http://10.20.15.95:8129/BEFAQ  200 709
+INFO:sanic.access:
+process_query jupyter
+query_word_list ['jupyter']
+ES查询语句： {'query': {'bool': {'must': [{'bool': {'should': [{'match': {'process_question': 'jupyter'}}]}}]}}, '_source': ['q_id', 'process_question', 'original_question', 'answer', 'specific_q_id'], 'size': 10}
+maybe_original_questions_es ['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+Q:jupyter,召回阶段用时0.005621秒
+['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+orgin_query_list ['jupyter']
+BERT: 0.021211624145507812
+np.mean: 9.34600830078125e-05
+MBERT: 2.002716064453125e-05
+reshape: 1.5974044799804688e-05
+SKlearn: 0.0007064342498779297
+Q:jupyter,Matching cosine_sim用时0.022123秒
+consin_sim: [0.2712891352601786, 0.24307801828398218, -0.04403442438865092]
+jaccard_sim: [0.25, 0.3333333333333333, 0.125]
+[5, 125, 171]
+['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+re_rank_sim: [0.2670313082081429, 0.2611290812938524, -0.010227539510920737]
+{5: [0], 125: [1], 171: [2]}
+Q:jupyter,Deduplicate and Threshold用时0.000019秒
+high_confidence_q_id_pos [0, 1]
+[{'q_id': 5, 'specific_q_id': 3, 'question': 'jupyter运行不出来', 'answer': '用kernel里面的Clear Output清除一下重新运行', 'confidence': 0.27}, {'q_id': 125, 'specific_q_id': 17, 'question': '如何打开jupyter', 'answer': '1.jupyter有图形打开方式,按住窗口键，在anaconda文件夹下面有jupyter点击可以打开  2.可以按住ctrl加R键，然后在里面输入cmd，会出现黑屏终端。在终端当中输入jupyter notebook命令', 'confidence': 0.26}]
+[2020-11-30 06:14:03 +0000] - (sanic.access)[INFO][10.20.31.118:61031]: POST http://10.20.15.95:8129/BEFAQ  200 709
+INFO:sanic.access:
+process_query jupyter
+query_word_list ['jupyter']
+ES查询语句： {'query': {'bool': {'must': [{'bool': {'should': [{'match': {'process_question': 'jupyter'}}]}}]}}, '_source': ['q_id', 'process_question', 'original_question', 'answer', 'specific_q_id'], 'size': 10}
+maybe_original_questions_es ['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+Q:jupyter,召回阶段用时0.006449秒
+['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+orgin_query_list ['jupyter']
+BERT: 0.02085590362548828
+np.mean: 8.177757263183594e-05
+MBERT: 1.5497207641601562e-05
+reshape: 1.2874603271484375e-05
+SKlearn: 0.0005433559417724609
+Q:jupyter,Matching cosine_sim用时0.021575秒
+consin_sim: [0.2712891352601786, 0.24307801828398218, -0.04403442438865092]
+jaccard_sim: [0.25, 0.3333333333333333, 0.125]
+[5, 125, 171]
+['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+['jupyter运行不出来', '如何打开jupyter', 'jupyter课程基本都快坚持多久？']
+re_rank_sim: [0.2670313082081429, 0.2611290812938524, -0.010227539510920737]
+{5: [0], 125: [1], 171: [2]}
+Q:jupyter,Deduplicate and Threshold用时0.000014秒
+high_confidence_q_id_pos [0, 1]
+[{'q_id': 5, 'specific_q_id': 3, 'question': 'jupyter运行不出来', 'answer': '用kernel里面的Clear Output清除一下重新运行', 'confidence': 0.27}, {'q_id': 125, 'specific_q_id': 17, 'question': '如何打开jupyter', 'answer': '1.jupyter有图形打开方式,按住窗口键，在anaconda文件夹下面有jupyter点击可以打开  2.可以按住ctrl加R键，然后在里面输入cmd，会出现黑屏终端。在终端当中输入jupyter notebook命令', 'confidence': 0.26}]
+[2020-11-30 06:20:01 +0000] - (sanic.access)[INFO][10.20.31.118:61158]: POST http://10.20.15.95:8129/BEFAQ  200 709
+INFO:sanic.access:
+process_query jupyter如何打开
+query_word_list ['jupyter', '如何', '打开']
+ES查询语句： {'query': {'bool': {'must': [{'bool': {'should': [{'match': {'process_question': 'jupyter'}}, {'match': {'process_question': '如何'}}, {'match': {'process_question': '打开'}}]}}]}}, '_source': ['q_id', 'process_question', 'original_question', 'answer', 'specific_q_id'], 'size': 10}
+maybe_original_questions_es ['如何打开jupyter', 'jupyter运行不出来', 'Series遍历时如何获取索引呢', 'resample方法如何改变频率为星期', 'dataframe中的resample方法如何使用', 'jupyter课程基本都快坚持多久？', 'Series如何获取挨个获取数据', 'Series遍历时如何获取索引呢', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据']
+Q:jupyter如何打开,召回阶段用时0.006110秒
+['如何打开jupyter', 'jupyter运行不出来', 'Series遍历时如何获取索引呢', 'resample方法如何改变频率为星期', 'dataframe中的resample方法如何使用', 'jupyter课程基本都快坚持多久？', 'Series如何获取挨个获取数据', 'Series遍历时如何获取索引呢', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据']
+orgin_query_list ['jupyter如何打开']
+BERT: 0.02266240119934082
+np.mean: 8.153915405273438e-05
+MBERT: 2.9325485229492188e-05
+reshape: 2.384185791015625e-05
+SKlearn: 0.0005533695220947266
+Q:jupyter如何打开,Matching cosine_sim用时0.023419秒
+consin_sim: [0.97813285265957, 0.3448857669202724, 0.36200517828696277, 0.21858937530093553, 0.2554038717023305, 0.15714278556498887, 0.31379183365839314, 0.36200517828696277, 0.19931958233520555, 0.19931958233520555]
+jaccard_sim: [1.0, 0.16666666666666666, 0.1111111111111111, 0.1111111111111111, 0.1111111111111111, 0.1, 0.14285714285714285, 0.1111111111111111, 0.1, 0.1]
+[125, 5, 108, 141, 140, 171, 135, 133, 109, 136]
+['如何打开jupyter', 'jupyter运行不出来', 'Series遍历时如何获取索引呢', 'resample方法如何改变频率为星期', 'dataframe中的resample方法如何使用', 'jupyter课程基本都快坚持多久？', 'Series如何获取挨个获取数据', 'Series遍历时如何获取索引呢', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据']
+['如何打开jupyter', 'jupyter运行不出来', 'series遍历时如何获取索引呢', 'resample方法如何改变频率为星期', 'dataframe中的resample方法如何使用', 'jupyter课程基本都快坚持多久？', 'series如何获取挨个获取数据', 'series遍历时如何获取索引呢', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据']
+re_rank_sim: [0.982506282127656, 0.30924194686955125, 0.31182636485179244, 0.19709372246297066, 0.2265453195840866, 0.1457142284519911, 0.2796048954981431, 0.31182636485179244, 0.17945566586816447, 0.17945566586816447]
+{125: [0], 5: [1], 108: [2], 141: [3], 140: [4], 171: [5], 135: [6], 133: [7], 109: [8], 136: [9]}
+Q:jupyter如何打开,Deduplicate and Threshold用时0.000023秒
+high_confidence_q_id_pos [0, 1, 2, 4, 6, 7]
+[{'q_id': 125, 'specific_q_id': 17, 'question': '如何打开jupyter', 'answer': '1.jupyter有图形打开方式,按住窗口键，在anaconda文件夹下面有jupyter点击可以打开  2.可以按住ctrl加R键，然后在里面输入cmd，会出现黑屏终端。在终端当中输入jupyter notebook命令', 'confidence': 0.98}, {'q_id': 5, 'specific_q_id': 3, 'question': 'jupyter运行不出来', 'answer': '用kernel里面的Clear Output清除一下重新运行', 'confidence': 0.31}, {'q_id': 108, 'specific_q_id': 9, 'question': 'Series遍历时如何获取索引呢', 'answer': '通过for循环Series的keys()方法进行获取', 'confidence': 0.31}, {'q_id': 133, 'specific_q_id': 23, 'question': 'Series遍历时如何获取索引呢', 'answer': '通过for循环Series的keys()方法进行获取\n', 'confidence': 0.31}, {'q_id': 135, 'specific_q_id': 24, 'question': 'Series如何获取挨个获取数据', 'answer': '通过for循环Series,循环出来的每个数据都是\n', 'confidence': 0.28}]
+[2020-11-30 06:20:26 +0000] - (sanic.access)[INFO][10.20.31.118:61190]: POST http://10.20.15.95:8129/BEFAQ  200 1400
+INFO:sanic.access:
+process_query 如何打开jupyter
+query_word_list ['如何', '打开', 'jupyter']
+ES查询语句： {'query': {'bool': {'must': [{'bool': {'should': [{'match': {'process_question': '如何'}}, {'match': {'process_question': '打开'}}, {'match': {'process_question': 'jupyter'}}]}}]}}, '_source': ['q_id', 'process_question', 'original_question', 'answer', 'specific_q_id'], 'size': 10}
+maybe_original_questions_es ['如何打开jupyter', 'jupyter运行不出来', 'Series遍历时如何获取索引呢', 'resample方法如何改变频率为星期', 'dataframe中的resample方法如何使用', 'jupyter课程基本都快坚持多久？', 'Series如何获取挨个获取数据', 'Series遍历时如何获取索引呢', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据']
+Q:如何打开jupyter,召回阶段用时0.082004秒
+['如何打开jupyter', 'jupyter运行不出来', 'Series遍历时如何获取索引呢', 'resample方法如何改变频率为星期', 'dataframe中的resample方法如何使用', 'jupyter课程基本都快坚持多久？', 'Series如何获取挨个获取数据', 'Series遍历时如何获取索引呢', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据']
+orgin_query_list ['如何打开jupyter']
+BERT: 0.0195467472076416
+np.mean: 9.369850158691406e-05
+MBERT: 3.7670135498046875e-05
+reshape: 2.7894973754882812e-05
+SKlearn: 0.0006914138793945312
+Q:如何打开jupyter,Matching cosine_sim用时0.020471秒
+consin_sim: [1.0, 0.34627163210852197, 0.4089949497516762, 0.2526386533858436, 0.2806804915811756, 0.1777104563016188, 0.33468086977210393, 0.4089949497516762, 0.22377071830421832, 0.22377071830421832]
+jaccard_sim: [1.0, 0.16666666666666666, 0.1111111111111111, 0.1111111111111111, 0.1111111111111111, 0.1, 0.14285714285714285, 0.1111111111111111, 0.1, 0.1]
+[125, 5, 108, 141, 140, 171, 135, 133, 109, 136]
+['如何打开jupyter', 'jupyter运行不出来', 'Series遍历时如何获取索引呢', 'resample方法如何改变频率为星期', 'dataframe中的resample方法如何使用', 'jupyter课程基本都快坚持多久？', 'Series如何获取挨个获取数据', 'Series遍历时如何获取索引呢', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据']
+['如何打开jupyter', 'jupyter运行不出来', 'series遍历时如何获取索引呢', 'resample方法如何改变频率为星期', 'dataframe中的resample方法如何使用', 'jupyter课程基本都快坚持多久？', 'series如何获取挨个获取数据', 'series遍历时如何获取索引呢', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据']
+re_rank_sim: [1.0, 0.3103506390201509, 0.3494181820235632, 0.22433314493089715, 0.2467666154871627, 0.16216836504129506, 0.29631612438911176, 0.3494181820235632, 0.1990165746433747, 0.1990165746433747]
+{125: [0], 5: [1], 108: [2], 141: [3], 140: [4], 171: [5], 135: [6], 133: [7], 109: [8], 136: [9]}
+Q:如何打开jupyter,Deduplicate and Threshold用时0.000023秒
+high_confidence_q_id_pos [0, 1, 2, 3, 4, 6, 7]
+[{'q_id': 125, 'specific_q_id': 17, 'question': '如何打开jupyter', 'answer': '1.jupyter有图形打开方式,按住窗口键，在anaconda文件夹下面有jupyter点击可以打开  2.可以按住ctrl加R键，然后在里面输入cmd，会出现黑屏终端。在终端当中输入jupyter notebook命令', 'confidence': 1.0}, {'q_id': 108, 'specific_q_id': 9, 'question': 'Series遍历时如何获取索引呢', 'answer': '通过for循环Series的keys()方法进行获取', 'confidence': 0.35}, {'q_id': 133, 'specific_q_id': 23, 'question': 'Series遍历时如何获取索引呢', 'answer': '通过for循环Series的keys()方法进行获取\n', 'confidence': 0.35}, {'q_id': 5, 'specific_q_id': 3, 'question': 'jupyter运行不出来', 'answer': '用kernel里面的Clear Output清除一下重新运行', 'confidence': 0.31}, {'q_id': 135, 'specific_q_id': 24, 'question': 'Series如何获取挨个获取数据', 'answer': '通过for循环Series,循环出来的每个数据都是\n', 'confidence': 0.3}]
+[2020-11-30 06:33:58 +0000] - (sanic.access)[INFO][10.20.31.118:61808]: POST http://10.20.15.95:8129/BEFAQ  200 1398
+INFO:sanic.access:
+WARNING:asyncio:Executing <Task finished coro=<Sanic.handle_request() done, defined at /root/.local/share/virtualenvs/BEFAQ-bxG4-Ian/lib/python3.6/site-packages/sanic/app.py:881> result=None created at /root/.local/share/virtualenvs/BEFAQ-bxG4-Ian/lib/python3.6/site-packages/sanic/server.py:458> took 0.107 seconds
+process_query jupyter如何打开
+query_word_list ['jupyter', '如何', '打开']
+ES查询语句： {'query': {'bool': {'must': [{'bool': {'should': [{'match': {'process_question': 'jupyter'}}, {'match': {'process_question': '如何'}}, {'match': {'process_question': '打开'}}]}}]}}, '_source': ['q_id', 'process_question', 'original_question', 'answer', 'specific_q_id'], 'size': 10}
+maybe_original_questions_es ['如何打开jupyter', 'jupyter运行不出来', 'Series遍历时如何获取索引呢', 'resample方法如何改变频率为星期', 'dataframe中的resample方法如何使用', 'jupyter课程基本都快坚持多久？', 'Series如何获取挨个获取数据', 'Series遍历时如何获取索引呢', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据']
+Q:jupyter如何打开,召回阶段用时0.006113秒
+['如何打开jupyter', 'jupyter运行不出来', 'Series遍历时如何获取索引呢', 'resample方法如何改变频率为星期', 'dataframe中的resample方法如何使用', 'jupyter课程基本都快坚持多久？', 'Series如何获取挨个获取数据', 'Series遍历时如何获取索引呢', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据']
+orgin_query_list ['jupyter如何打开']
+BERT: 0.02321314811706543
+np.mean: 7.724761962890625e-05
+MBERT: 2.8848648071289062e-05
+reshape: 2.2411346435546875e-05
+SKlearn: 0.000518798828125
+Q:jupyter如何打开,Matching cosine_sim用时0.023928秒
+consin_sim: [0.97813285265957, 0.3448857669202724, 0.36200517828696277, 0.21858937530093553, 0.2554038717023305, 0.15714278556498887, 0.31379183365839314, 0.36200517828696277, 0.19931958233520555, 0.19931958233520555]
+jaccard_sim: [1.0, 0.16666666666666666, 0.1111111111111111, 0.1111111111111111, 0.1111111111111111, 0.1, 0.14285714285714285, 0.1111111111111111, 0.1, 0.1]
+[125, 5, 108, 141, 140, 171, 135, 133, 109, 136]
+['如何打开jupyter', 'jupyter运行不出来', 'Series遍历时如何获取索引呢', 'resample方法如何改变频率为星期', 'dataframe中的resample方法如何使用', 'jupyter课程基本都快坚持多久？', 'Series如何获取挨个获取数据', 'Series遍历时如何获取索引呢', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据']
+['如何打开jupyter', 'jupyter运行不出来', 'series遍历时如何获取索引呢', 'resample方法如何改变频率为星期', 'dataframe中的resample方法如何使用', 'jupyter课程基本都快坚持多久？', 'series如何获取挨个获取数据', 'series遍历时如何获取索引呢', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据']
+re_rank_sim: [0.982506282127656, 0.30924194686955125, 0.31182636485179244, 0.19709372246297066, 0.2265453195840866, 0.1457142284519911, 0.2796048954981431, 0.31182636485179244, 0.17945566586816447, 0.17945566586816447]
+{125: [0], 5: [1], 108: [2], 141: [3], 140: [4], 171: [5], 135: [6], 133: [7], 109: [8], 136: [9]}
+Q:jupyter如何打开,Deduplicate and Threshold用时0.000022秒
+high_confidence_q_id_pos [0, 1, 2, 4, 6, 7]
+[{'q_id': 125, 'specific_q_id': 17, 'question': '如何打开jupyter', 'answer': '1.jupyter有图形打开方式,按住窗口键，在anaconda文件夹下面有jupyter点击可以打开  2.可以按住ctrl加R键，然后在里面输入cmd，会出现黑屏终端。在终端当中输入jupyter notebook命令', 'confidence': 0.98}, {'q_id': 5, 'specific_q_id': 3, 'question': 'jupyter运行不出来', 'answer': '用kernel里面的Clear Output清除一下重新运行', 'confidence': 0.31}, {'q_id': 108, 'specific_q_id': 9, 'question': 'Series遍历时如何获取索引呢', 'answer': '通过for循环Series的keys()方法进行获取', 'confidence': 0.31}, {'q_id': 133, 'specific_q_id': 23, 'question': 'Series遍历时如何获取索引呢', 'answer': '通过for循环Series的keys()方法进行获取\n', 'confidence': 0.31}, {'q_id': 135, 'specific_q_id': 24, 'question': 'Series如何获取挨个获取数据', 'answer': '通过for循环Series,循环出来的每个数据都是\n', 'confidence': 0.28}]
+[2020-11-30 06:34:55 +0000] - (sanic.access)[INFO][10.20.31.118:61819]: POST http://10.20.15.95:8129/BEFAQ  200 1400
+INFO:sanic.access:
+process_query jupeyter如何打开
+query_word_list ['jupeyter', '如何', '打开']
+ES查询语句： {'query': {'bool': {'must': [{'bool': {'should': [{'match': {'process_question': 'jupeyter'}}, {'match': {'process_question': '如何'}}, {'match': {'process_question': '打开'}}]}}]}}, '_source': ['q_id', 'process_question', 'original_question', 'answer', 'specific_q_id'], 'size': 10}
+maybe_original_questions_es ['如何打开jupyter', 'Series遍历时如何获取索引呢', 'resample方法如何改变频率为星期', 'dataframe中的resample方法如何使用', 'Series如何获取挨个获取数据', 'Series遍历时如何获取索引呢', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据']
+Q:jupeyter如何打开,召回阶段用时0.080605秒
+['如何打开jupyter', 'Series遍历时如何获取索引呢', 'resample方法如何改变频率为星期', 'dataframe中的resample方法如何使用', 'Series如何获取挨个获取数据', 'Series遍历时如何获取索引呢', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据']
+orgin_query_list ['jupeyter如何打开']
+BERT: 0.018793344497680664
+np.mean: 7.462501525878906e-05
+MBERT: 2.8848648071289062e-05
+reshape: 2.193450927734375e-05
+SKlearn: 0.0006444454193115234
+Q:jupeyter如何打开,Matching cosine_sim用时0.019633秒
+consin_sim: [0.9565194348497299, 0.32904432865211736, 0.20721067392782594, 0.24398821260042966, 0.2901462673919401, 0.32904432865211736, 0.17326456483141622, 0.17326456483141622]
+jaccard_sim: [0.5, 0.1111111111111111, 0.1111111111111111, 0.1111111111111111, 0.14285714285714285, 0.1111111111111111, 0.1, 0.1]
+[125, 108, 141, 140, 135, 133, 109, 136]
+['如何打开jupyter', 'Series遍历时如何获取索引呢', 'resample方法如何改变频率为星期', 'dataframe中的resample方法如何使用', 'Series如何获取挨个获取数据', 'Series遍历时如何获取索引呢', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据']
+['如何打开jupyter', 'series遍历时如何获取索引呢', 'resample方法如何改变频率为星期', 'dataframe中的resample方法如何使用', 'series如何获取挨个获取数据', 'series遍历时如何获取索引呢', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据']
+re_rank_sim: [0.8652155478797839, 0.2854576851439161, 0.18799076136448298, 0.21741279230256597, 0.2606884424849807, 0.2854576851439161, 0.15861165186513299, 0.15861165186513299]
+{125: [0], 108: [1], 141: [2], 140: [3], 135: [4], 133: [5], 109: [6], 136: [7]}
+Q:jupeyter如何打开,Deduplicate and Threshold用时0.000019秒
+high_confidence_q_id_pos [0, 1, 3, 4, 5]
+[{'q_id': 125, 'specific_q_id': 17, 'question': '如何打开jupyter', 'answer': '1.jupyter有图形打开方式,按住窗口键，在anaconda文件夹下面有jupyter点击可以打开  2.可以按住ctrl加R键，然后在里面输入cmd，会出现黑屏终端。在终端当中输入jupyter notebook命令', 'confidence': 0.87}, {'q_id': 108, 'specific_q_id': 9, 'question': 'Series遍历时如何获取索引呢', 'answer': '通过for循环Series的keys()方法进行获取', 'confidence': 0.29}, {'q_id': 133, 'specific_q_id': 23, 'question': 'Series遍历时如何获取索引呢', 'answer': '通过for循环Series的keys()方法进行获取\n', 'confidence': 0.29}, {'q_id': 135, 'specific_q_id': 24, 'question': 'Series如何获取挨个获取数据', 'answer': '通过for循环Series,循环出来的每个数据都是\n', 'confidence': 0.26}, {'q_id': 140, 'specific_q_id': 29, 'question': 'dataframe中的resample方法如何使用', 'answer': "Pandas中的resample，重新采样，是对原样本重新处理的一个方法，是一个对常规时间序列数据重新采样和频率转换的便捷的方法，df.resample('3D').sum() 就是根据3天为频率求出三天的数据之和\n\n", 'confidence': 0.22}]
+[2020-11-30 09:52:59 +0000] - (sanic.access)[INFO][10.20.31.118:49543]: POST http://10.20.15.95:8129/BEFAQ  200 1792
+INFO:sanic.access:
+WARNING:asyncio:Executing <Task finished coro=<Sanic.handle_request() done, defined at /root/.local/share/virtualenvs/BEFAQ-bxG4-Ian/lib/python3.6/site-packages/sanic/app.py:881> result=None created at /root/.local/share/virtualenvs/BEFAQ-bxG4-Ian/lib/python3.6/site-packages/sanic/server.py:458> took 0.104 seconds
+process_query jup yter如何打开
+query_word_list ['jup', ' ', 'yter', '如何', '打开']
+ES查询语句： {'query': {'bool': {'must': [{'bool': {'should': [{'match': {'process_question': 'jup'}}, {'match': {'process_question': ' '}}, {'match': {'process_question': 'yter'}}, {'match': {'process_question': '如何'}}, {'match': {'process_question': '打开'}}]}}]}}, '_source': ['q_id', 'process_question', 'original_question', 'answer', 'specific_q_id'], 'size': 10}
+maybe_original_questions_es ['如何打开jupyter', 'Series遍历时如何获取索引呢', 'resample方法如何改变频率为星期', 'dataframe中的resample方法如何使用', 'Series如何获取挨个获取数据', 'Series遍历时如何获取索引呢', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据']
+Q:jup yter如何打开,召回阶段用时0.005863秒
+['如何打开jupyter', 'Series遍历时如何获取索引呢', 'resample方法如何改变频率为星期', 'dataframe中的resample方法如何使用', 'Series如何获取挨个获取数据', 'Series遍历时如何获取索引呢', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据']
+orgin_query_list ['jup', 'yter如何打开']
+BERT: 0.05626201629638672
+np.mean: 0.00011897087097167969
+MBERT: 4.863739013671875e-05
+reshape: 3.62396240234375e-05
+SKlearn: 0.0010759830474853516
+Q:jup yter如何打开,Matching cosine_sim用时0.057646秒
+consin_sim: [0.6986601758064779, 0.15441429629017628, 0.07931403150738617, 0.08387727478094799, 0.10375032301206072, 0.15441429629017628, 0.05885673163999579, 0.05885673163999579]
+jaccard_sim: [0.3333333333333333, 0.09090909090909091, 0.09090909090909091, 0.09090909090909091, 0.1111111111111111, 0.09090909090909091, 0.08333333333333333, 0.08333333333333333]
+[125, 108, 141, 140, 135, 133, 109, 136]
+['如何打开jupyter', 'Series遍历时如何获取索引呢', 'resample方法如何改变频率为星期', 'dataframe中的resample方法如何使用', 'Series如何获取挨个获取数据', 'Series遍历时如何获取索引呢', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据']
+['如何打开jupyter', 'series遍历时如何获取索引呢', 'resample方法如何改变频率为星期', 'dataframe中的resample方法如何使用', 'series如何获取挨个获取数据', 'series遍历时如何获取索引呢', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据']
+re_rank_sim: [0.625594807311849, 0.14171325521395922, 0.08163304338772713, 0.08528363800657658, 0.10522248063187081, 0.14171325521395922, 0.0637520519786633, 0.0637520519786633]
+{125: [0], 108: [1], 141: [2], 140: [3], 135: [4], 133: [5], 109: [6], 136: [7]}
+Q:jup yter如何打开,Deduplicate and Threshold用时0.000030秒
+high_confidence_q_id_pos [0]
+[{'q_id': 125, 'specific_q_id': 17, 'question': '如何打开jupyter', 'answer': '1.jupyter有图形打开方式,按住窗口键，在anaconda文件夹下面有jupyter点击可以打开  2.可以按住ctrl加R键，然后在里面输入cmd，会出现黑屏终端。在终端当中输入jupyter notebook命令', 'confidence': 0.63}]
+[2020-11-30 09:53:32 +0000] - (sanic.access)[INFO][10.20.31.118:49552]: POST http://10.20.15.95:8129/BEFAQ  200 509
+INFO:sanic.access:
+process_query jupyter如何打开
+query_word_list ['jupyter', '如何', '打开']
+ES查询语句： {'query': {'bool': {'must': [{'bool': {'should': [{'match': {'process_question': 'jupyter'}}, {'match': {'process_question': '如何'}}, {'match': {'process_question': '打开'}}]}}]}}, '_source': ['q_id', 'process_question', 'original_question', 'answer', 'specific_q_id'], 'size': 10}
+maybe_original_questions_es ['如何打开jupyter', 'jupyter运行不出来', 'Series遍历时如何获取索引呢', 'resample方法如何改变频率为星期', 'dataframe中的resample方法如何使用', 'jupyter课程基本都快坚持多久？', 'Series如何获取挨个获取数据', 'Series遍历时如何获取索引呢', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据']
+Q:jupyter如何打开,召回阶段用时0.083901秒
+['如何打开jupyter', 'jupyter运行不出来', 'Series遍历时如何获取索引呢', 'resample方法如何改变频率为星期', 'dataframe中的resample方法如何使用', 'jupyter课程基本都快坚持多久？', 'Series如何获取挨个获取数据', 'Series遍历时如何获取索引呢', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据']
+orgin_query_list ['jupyter如何打开']
+BERT: 0.019463539123535156
+np.mean: 7.534027099609375e-05
+MBERT: 3.409385681152344e-05
+reshape: 2.4557113647460938e-05
+SKlearn: 0.0005977153778076172
+Q:jupyter如何打开,Matching cosine_sim用时0.020276秒
+consin_sim: [0.97813285265957, 0.3448857669202724, 0.36200517828696277, 0.21858937530093553, 0.2554038717023305, 0.15714278556498887, 0.31379183365839314, 0.36200517828696277, 0.19931958233520555, 0.19931958233520555]
+jaccard_sim: [1.0, 0.16666666666666666, 0.1111111111111111, 0.1111111111111111, 0.1111111111111111, 0.1, 0.14285714285714285, 0.1111111111111111, 0.1, 0.1]
+[125, 5, 108, 141, 140, 171, 135, 133, 109, 136]
+['如何打开jupyter', 'jupyter运行不出来', 'Series遍历时如何获取索引呢', 'resample方法如何改变频率为星期', 'dataframe中的resample方法如何使用', 'jupyter课程基本都快坚持多久？', 'Series如何获取挨个获取数据', 'Series遍历时如何获取索引呢', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据']
+['如何打开jupyter', 'jupyter运行不出来', 'series遍历时如何获取索引呢', 'resample方法如何改变频率为星期', 'dataframe中的resample方法如何使用', 'jupyter课程基本都快坚持多久？', 'series如何获取挨个获取数据', 'series遍历时如何获取索引呢', 'dataframe中如何获取某行某列的数据', 'dataframe中如何获取某行某列的数据']
+re_rank_sim: [0.982506282127656, 0.30924194686955125, 0.31182636485179244, 0.19709372246297066, 0.2265453195840866, 0.1457142284519911, 0.2796048954981431, 0.31182636485179244, 0.17945566586816447, 0.17945566586816447]
+{125: [0], 5: [1], 108: [2], 141: [3], 140: [4], 171: [5], 135: [6], 133: [7], 109: [8], 136: [9]}
+Q:jupyter如何打开,Deduplicate and Threshold用时0.000027秒
+high_confidence_q_id_pos [0, 1, 2, 4, 6, 7]
+[{'q_id': 125, 'specific_q_id': 17, 'question': '如何打开jupyter', 'answer': '1.jupyter有图形打开方式,按住窗口键，在anaconda文件夹下面有jupyter点击可以打开  2.可以按住ctrl加R键，然后在里面输入cmd，会出现黑屏终端。在终端当中输入jupyter notebook命令', 'confidence': 0.98}, {'q_id': 5, 'specific_q_id': 3, 'question': 'jupyter运行不出来', 'answer': '用kernel里面的Clear Output清除一下重新运行', 'confidence': 0.31}, {'q_id': 108, 'specific_q_id': 9, 'question': 'Series遍历时如何获取索引呢', 'answer': '通过for循环Series的keys()方法进行获取', 'confidence': 0.31}, {'q_id': 133, 'specific_q_id': 23, 'question': 'Series遍历时如何获取索引呢', 'answer': '通过for循环Series的keys()方法进行获取\n', 'confidence': 0.31}, {'q_id': 135, 'specific_q_id': 24, 'question': 'Series如何获取挨个获取数据', 'answer': '通过for循环Series,循环出来的每个数据都是\n', 'confidence': 0.28}]
+[2020-11-30 10:17:20 +0000] - (sanic.access)[INFO][10.20.31.118:50751]: POST http://10.20.15.95:8129/BEFAQ  200 1400
+INFO:sanic.access:
+WARNING:asyncio:Executing <Task finished coro=<Sanic.handle_request() done, defined at /root/.local/share/virtualenvs/BEFAQ-bxG4-Ian/lib/python3.6/site-packages/sanic/app.py:881> result=None created at /root/.local/share/virtualenvs/BEFAQ-bxG4-Ian/lib/python3.6/site-packages/sanic/server.py:458> took 0.109 seconds
+process_query 索引
+query_word_list ['索引']
+ES查询语句： {'query': {'bool': {'must': [{'bool': {'should': [{'match': {'process_question': '索引'}}]}}]}}, '_source': ['q_id', 'process_question', 'original_question', 'answer', 'specific_q_id'], 'size': 10}
+maybe_original_questions_es ['其作用是创建一个新索引的新对象，reindex能修改行索引和列索引', 'Series遍历时如何获取索引呢', 'Series遍历时如何获取索引呢', '如果使用reindex有的索引不存在怎么办']
+Q:索引,召回阶段用时0.005594秒
+['其作用是创建一个新索引的新对象，reindex能修改行索引和列索引', 'Series遍历时如何获取索引呢', 'Series遍历时如何获取索引呢', '如果使用reindex有的索引不存在怎么办']
+orgin_query_list ['索引']
+BERT: 0.020572185516357422
+np.mean: 8.845329284667969e-05
+MBERT: 1.9550323486328125e-05
+reshape: 1.6927719116210938e-05
+SKlearn: 0.0006930828094482422
+Q:索引,Matching cosine_sim用时0.021468秒
+consin_sim: [0.336556950853386, 0.3101133360273073, 0.3101133360273073, 0.26596343352889085]
+jaccard_sim: [0.17647058823529413, 0.14285714285714285, 0.14285714285714285, 0.1111111111111111]
+[110, 133, 108, 139]
+['其作用是创建一个新索引的新对象，reindex能修改行索引和列索引', 'Series遍历时如何获取索引呢', 'Series遍历时如何获取索引呢', '如果使用reindex有的索引不存在怎么办']
+['其作用是创建一个新索引的新对象，reindex能修改行索引和列索引', 'series遍历时如何获取索引呢', 'series遍历时如何获取索引呢', '如果使用reindex有的索引不存在怎么办']
+re_rank_sim: [0.30453967832976764, 0.2766620973932744, 0.2766620973932744, 0.23499296904533493]
+{110: [0], 133: [1], 108: [2], 139: [3]}
+Q:索引,Deduplicate and Threshold用时0.000020秒
+high_confidence_q_id_pos [0, 1, 2, 3]
+[{'q_id': 110, 'specific_q_id': 11, 'question': '其作用是创建一个新索引的新对象，reindex能修改行索引和列索引', 'answer': "Pandas中的resample，重新采样，是对原样本重新处理的一个方法，是一个对常规时间序列数据重新采样和频率转换的便捷的方法，df.resample('3D').sum() 就是根据3天为频率求出三天的数据之和嘿嘿嘿", 'confidence': 0.3}, {'q_id': 133, 'specific_q_id': 23, 'question': 'Series遍历时如何获取索引呢', 'answer': '通过for循环Series的keys()方法进行获取\n', 'confidence': 0.28}, {'q_id': 108, 'specific_q_id': 9, 'question': 'Series遍历时如何获取索引呢', 'answer': '通过for循环Series的keys()方法进行获取', 'confidence': 0.28}, {'q_id': 139, 'specific_q_id': 28, 'question': '如果使用reindex有的索引不存在怎么办', 'answer': '调用reindex将会重新排序，缺失值则用NaN填补，所以索引不存在对应的值会是NaN\n', 'confidence': 0.23}]
+[2020-11-30 10:17:33 +0000] - (sanic.access)[INFO][10.20.31.118:50766]: POST http://10.20.15.95:8129/BEFAQ  200 1513
+INFO:sanic.access:
+process_query 索
+query_word_list ['索']
+ES查询语句： {'query': {'bool': {'must': [{'bool': {'should': [{'match': {'process_question': '索'}}]}}]}}, '_source': ['q_id', 'process_question', 'original_question', 'answer', 'specific_q_id'], 'size': 10}
+maybe_original_questions_es []
+use_faiss
+ES检索出的数据 []
+faiss、annoy 检索出的新数据 jy
+ES查询语句： {'query': {'bool': {'must': [[{'match_phrase': {'original_question': 'jy'}}]]}}, '_source': ['q_id', 'specific_q_id', 'process_question', 'original_question', 'answer']}
+faiss、annoy 检索出的新数据 ma
+ES查询语句： {'query': {'bool': {'must': [[{'match_phrase': {'original_question': 'ma'}}]]}}, '_source': ['q_id', 'specific_q_id', 'process_question', 'original_question', 'answer']}
+faiss、annoy 检索出的新数据 NameError:name 'plt' is not defined怎么解决
+ES查询语句： {'query': {'bool': {'must': [[{'match_phrase': {'original_question': "NameError:name 'plt' is not defined怎么解决"}}]]}}, '_source': ['q_id', 'specific_q_id', 'process_question', 'original_question', 'answer']}
+faiss、annoy 检索出的新数据 出现No module name 'pandas'怎么处理
+ES查询语句： {'query': {'bool': {'must': [[{'match_phrase': {'original_question': "出现No module name 'pandas'怎么处理"}}]]}}, '_source': ['q_id', 'specific_q_id', 'process_question', 'original_question', 'answer']}
+Q:索,召回阶段用时0.056505秒
+['jy', 'ma', "NameError:name 'plt' is not defined怎么解决", "出现No module name 'pandas'怎么处理"]
+orgin_query_list ['索']
+BERT: 0.01538538932800293
+np.mean: 6.151199340820312e-05
+MBERT: 1.430511474609375e-05
+reshape: 1.1444091796875e-05
+SKlearn: 0.0003764629364013672
+Q:索,Matching cosine_sim用时0.015893秒
+consin_sim: [0.7474761376489144, 0.7331400656124175, 0.6696771185638659, 0.645660274900776]
+jaccard_sim: [0.0, 0.0, 0.0, 0.0]
+[180, 181, 129, 126]
+['jy', 'ma', "NameError:name 'plt' is not defined怎么解决", "出现No module name 'pandas'怎么处理"]
+['jy', 'ma', "nameerror:name 'plt' is not defined怎么解决", "出现no module name 'pandas'怎么处理"]
+re_rank_sim: [0.5979809101191316, 0.586512052489934, 0.5357416948510928, 0.5165282199206208]
+{180: [0], 181: [1], 129: [2], 126: [3]}
+Q:索,Deduplicate and Threshold用时0.000011秒
+high_confidence_q_id_pos [0, 1, 2, 3]
+[{'q_id': 180, 'specific_q_id': 59, 'question': 'jy', 'answer': '1.是否导入matplotlib模块： import matplotlib as plt   2.导入模块是否执行运行', 'confidence': 0.6}, {'q_id': 181, 'specific_q_id': 60, 'question': 'ma', 'answer': '1.是否导入matplotlib模块： import matplotlib as plt   2.导入模块是否执行运行', 'confidence': 0.59}, {'q_id': 129, 'specific_q_id': 20, 'question': "NameError:name 'plt' is not defined怎么解决", 'answer': '1.是否导入matplotlib模块： import matplotlib as plt   2.导入模块是否执行运行', 'confidence': 0.54}, {'q_id': 126, 'specific_q_id': 18, 'question': "出现No module name 'pandas'怎么处理", 'answer': '没有安装pandas需要使用pip install pandas安装 pandas', 'confidence': 0.52}]
+[2020-11-30 10:17:37 +0000] - (sanic.access)[INFO][10.20.31.118:50768]: POST http://10.20.15.95:8129/BEFAQ  200 949
+INFO:sanic.access:
